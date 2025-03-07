@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="MBU Logo" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="text-content">
+            <h1>We Want Your <br><span class="highlight">Feedback</span></h1>
+            <p>
+                Proin nec tortor eget dolor suscipit malesuada. Duis in felis diam. Donec feugiat ut ligula at bibendum. Maecenas posuere varius risus eu congue.
+            </p>
+            <button id="giveFeedbackBtn" onclick="window.location.href='feedback.html'">Give Feedback</button>
+        </div>
+        <div class="image-content">
+            <img src="images/imagepic.jpeg" alt="Feedback Illustration">
+        </div>
+    </section>
+
+
+    <!-- attribute section -->
+
+    <div class="attribute-row">
+        <div class="attribute">
+            <img src="images/h1.png" alt="Anonymous Ratings">
+        </div>
+        <div class="attribute">
+            <img src="images/h2.png" alt="Quick Feedback">
+        </div>
+        <div class="attribute">
+            <img src="images/h3.png" alt="Actionable Insights">
+        </div>
+    </div>
+
+    <div class="gap" style="height: 150px;"></div>
+    
+    <!-- feedback importance section -->
+    <section id="feedback-importance">
+        <div class="feedback-content">
+            <h2>Your Voice Matters</h2>
+            <p>
+                At <strong>MBU</strong>, we are committed to providing a safe and secure platform where you can share your honest feedback without hesitation. Your feedback is anonymous, ensuring that your identity remains confidential. Every suggestion, complaint, and compliment is carefully reviewed to help us understand how we can improve and create a campus environment that meets your needs.
+            </p>
+            <p>
+                Whether it's about facilities, teaching methods, or support services, each piece of feedback plays a crucial role in shaping a better university experience. Your input is the foundation for positive changes, allowing us to make data-driven improvements that benefit everyone on campus. 
+            </p>
+            <p>We value your feedback to enhance your campus experience. Click below to make your voice heard.</p>
+            <button id="giveFeedbackBtn" onclick="window.location.href='feedback.html'">Give Feedback</button>
+            <p class="highlight">
+                Your voice is powerful. Help us create a brighter future for all – one feedback at a time.
+            </p>
+        </div>
+        <div class="feedback-image">
+            <img src="images/h4.png" alt="Students sharing feedback" />
+        </div>
+    </section>
+
+    <div class="gap" style="height: 150px;"></div>
+
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>
+                Our mission is to foster a dynamic learning environment where every stakeholder contributes to the growth and enhancement of campus life. With over 30 years of unwavering trust in educational excellence, <strong>MBU</strong> has evolved into a hub of innovation, discipline, and leadership. As a premier institution with prestigious accreditations and recognitions, including NIRF rankings and QS-IGauge Diamond status, <strong>MBU</strong> is dedicated to academic brilliance, sustainable practices, and student-centered development.
+            </p>
+            <p>
+                With our feedback system, students and staff can now engage directly in shaping their university experience. Each piece of feedback you provide is anonymous, helping us make data-driven improvements, from facility upgrades to enhanced support services. Join us as we strive to create a vibrant, responsive campus that reflects the needs and aspirations of our community.
+            </p>
+            <p>
+                Rooted in a commitment to continuous improvement, our platform upholds the values of transparency, integrity, and inclusivity, ensuring every voice is heard and respected.
+            </p>
+            <p class="highlight">
+                Let’s work together to shape a better future – one feedback at a time.
+            </p>
+        </div>
+    </section>
+
+    <div class="gap" style="height: 150px;"></div>
+
+    <div class="review-section">
+        <h2>Recent Reviews</h2>
+        
+        <div class="review-grid">
+          <div class="review-card">
+            <div class="user-initials">MB</div>
+            <div class="review-content">
+              <div class="review-header">
+                <span class="recommendation no">Wouldn’t Recommend 👎</span>
+                <span class="rating">⭐ 2.1</span>
+              </div>
+              <p class="review-text">
+                The food quality here has been consistently disappointing. There’s a lack of variety, and meals are rarely fresh. Would not recommend dining here regularly if you have other options.
+              </p>
+              <p class="review-meta">Review for food at MBU</p>
+            </div>
+          </div>
+      
+          <div class="review-card">
+            <div class="user-initials">HJ</div>
+            <div class="review-content">
+              <div class="review-header">
+                <span class="recommendation yes">Would Recommend 👍</span>
+                <span class="rating">⭐ 4.3</span>
+              </div>
+              <p class="review-text">
+                The hostel is well-maintained, with clean facilities and helpful staff. A great option for anyone looking for a peaceful place to study and relax.
+              </p>
+              <p class="review-meta">Review for Hostel A at MBU</p>
+            </div>
+          </div>
+      
+          <div class="review-card">
+            <div class="user-initials">RT</div>
+            <div class="review-content">
+              <div class="review-header">
+                <span class="recommendation no">Wouldn’t Recommend 👎</span>
+                <span class="rating">⭐ 1.8</span>
+              </div>
+              <p class="review-text">
+                The faculty in the computer science department seems inexperienced in delivering practical knowledge, making it hard to apply what we learn.
+              </p>
+              <p class="review-meta">Review for Faculty in Computer Science</p>
+            </div>
+          </div>
+      
+          <!-- Add more review-card divs here as needed -->
+        </div>
+      </div>
+      
+
+
+      <div class="gap" style="height: 150px;"></div>
+      
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether it’s feedback about our amenities, questions, or suggestions, feel free to reach out.</p>
+            
+            <div class="contact-content">
+                <!-- Contact Details with Social Media Links -->
+                <div class="contact-details">
+                    <p>Connect with us to stay updated on all the latest events and announcements at our college. Follow us on social media and get involved!</p>
+                    <p><strong>Email:</strong> info@collegewebsite.com</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Address:</strong> 123 College Ave, City, State, ZIP</p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Contact Form -->
+                <form id="contactForm" onsubmit="return validateContactForm()">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

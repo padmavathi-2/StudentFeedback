@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script>
+        function showCategoryFields() {
+            // Hide all category-specific sections
+            document.getElementById("foodFields").style.display = "none";
+            document.getElementById("hostelFields").style.display = "none";
+            document.getElementById("facultyFields").style.display = "none";
+            
+            // Show selected category section
+            const selectedCategory = document.getElementById("category").value;
+            if (selectedCategory === "food") {
+                document.getElementById("foodFields").style.display = "block";
+            } else if (selectedCategory === "hostel") {
+                document.getElementById("hostelFields").style.display = "block";
+            } else if (selectedCategory === "faculty") {
+                document.getElementById("facultyFields").style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Submit Your Feedback</h2>
+        <label for="category">What would you like to review?</label>
+        <select id="category" name="category" onchange="showCategoryFields()">
+            <option value="">Select a category</option>
+            <option value="food">Food</option>
+            <option value="hostel">Hostel</option>
+            <option value="faculty">Faculty</option>
+        </select>
+
+        <!-- Food Review Fields -->
+        <div id="foodFields" style="display: none;">
+            <h3>Food Review</h3>
+            <label for="foodQuality">Quality of Food</label>
+            <input type="number" id="foodQuality" name="foodQuality" min="1" max="5" placeholder="Rate 1-5">
+
+            <label for="foodVariety">Variety of Dishes</label>
+            <input type="number" id="foodVariety" name="foodVariety" min="1" max="5" placeholder="Rate 1-5">
+
+            <label for="foodComments">Additional Comments</label>
+            <textarea id="foodComments" name="foodComments" placeholder="Share your thoughts on the food..."></textarea>
+        </div>
+
+        <!-- Hostel Review Fields -->
+        <div id="hostelFields" style="display: none;">
+            <h3>Hostel Review</h3>
+            <label for="hostelCleanliness">Cleanliness</label>
+            <input type="number" id="hostelCleanliness" name="hostelCleanliness" min="1" max="5" placeholder="Rate 1-5">
+
+            <label for="hostelFacilities">Facilities Provided</label>
+            <input type="number" id="hostelFacilities" name="hostelFacilities" min="1" max="5" placeholder="Rate 1-5">
+
+            <label for="hostelComments">Additional Comments</label>
+            <textarea id="hostelComments" name="hostelComments" placeholder="Share your thoughts on the hostel..."></textarea>
+        </div>
+
+        <!-- Faculty Review Fields -->
+        <div id="facultyFields" style="display: none;">
+            <h3>Faculty Review</h3>
+            <label for="facultyKnowledge">Knowledge Level</label>
+            <input type="number" id="facultyKnowledge" name="facultyKnowledge" min="1" max="5" placeholder="Rate 1-5">
+
+            <label for="facultyHelpfulness">Helpfulness</label>
+            <input type="number" id="facultyHelpfulness" name="facultyHelpfulness" min="1" max="5" placeholder="Rate 1-5">
+
+            <label for="facultyComments">Additional Comments</label>
+            <textarea id="facultyComments" name="facultyComments" placeholder="Share your thoughts on the faculty..."></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+    </div>
+</body>
+</html>
